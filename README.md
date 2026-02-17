@@ -1,55 +1,41 @@
-<!-- HEADER -->
+<!-- HEADER DARK RED -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:8B0000&height=240&section=header&text=ITALO%20LEÃO&fontSize=55&fontColor=ff0000&animation=fadeIn&fontAlignY=38"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:8B0000&height=230&section=header&text=ITALO%20LEÃO&fontSize=50&fontColor=ff0000&animation=fadeIn&fontAlignY=35" />
 </p>
 
-<!-- TYPING -->
+<!-- GIF DEV -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=FF0000&center=true&vCenter=true&width=800&lines=Full+Stack+Developer;Construindo+Soluções+Escaláveis;React+%7C+Node+%7C+TypeScript;Código+Limpo+%E2%9A%A1"/>
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="500"/>
+</p>
+
+<h2 align="center" style="color:#ff0000;">⚡ FULL STACK DEVELOPER</h2>
+
+---
+
+## 🩸 SOBRE MIM
+
+Desenvolvedor focado em:
+
+🔥 Performance extrema  
+🧠 Arquitetura limpa  
+⚙️ Back-end robusto  
+🎨 Interfaces modernas  
+
+Sempre evoluindo. Sempre construindo.
+
+---
+
+## 🛠️ STACK
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,nestjs,express,postgres,mongodb,docker,linux,git&theme=dark&perline=6" />
 </p>
 
 ---
 
-<h2 align="center">🩸 SOBRE MIM</h2>
+## 🚀 OBJETIVO
 
-<p align="center">
-Desenvolvedor focado em performance, arquitetura limpa e sistemas escaláveis.
-</p>
-
-<p align="center">
-🔥 Performance &nbsp;&nbsp; 🧠 Arquitetura &nbsp;&nbsp; ⚙️ Back-end &nbsp;&nbsp; 🎨 Front-end
-</p>
-
----
-
-# 🛠️ STACK
-
-## 🎨 FRONT-END
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,ts,js&theme=dark&perline=3" height="60"/>
-</p>
-
----
-
-## ⚙️ BACK-END
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,postgres,mongodb&theme=dark&perline=5" height="60"/>
-</p>
-
----
-
-## 🧰 DEVOPS
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,linux,git&theme=dark&perline=3" height="60"/>
-</p>
-
----
-
-<h2 align="center">🚀 OBJETIVO</h2>
-
-<p align="center">
-Construir sistemas sólidos, escaláveis e com impacto real.
-</p>
+Construir sistemas escaláveis e sólidos, com código limpo e impacto real.
 
 ---
 
@@ -58,22 +44,21 @@ Construir sistemas sólidos, escaláveis e com impacto real.
 <p align="center">
 
 <a href="mailto:caetanoitalo60@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-8B0000?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=red"/>
 </a>
 
 <a href="https://github.com/italodevjs">
-<img src="https://img.shields.io/badge/GitHub-8B0000?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=red"/>
 </a>
 
 <a href="https://www.instagram.com/italogains">
-<img src="https://img.shields.io/badge/Instagram-8B0000?style=for-the-badge&logo=instagram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=red"/>
 </a>
 
 </p>
 
 ---
 
-<!-- FOOTER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:000000&height=150&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:000000&height=120&section=footer"/>
 </p>
