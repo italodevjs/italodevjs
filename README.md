@@ -1,64 +1,95 @@
-<!-- HEADER DARK RED -->
+<!-- HEADER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:8B0000&height=230&section=header&text=ITALO%20LEÃO&fontSize=50&fontColor=ff0000&animation=fadeIn&fontAlignY=35" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:8B0000&height=260&section=header&text=ITALO%20LEÃO&fontSize=60&fontColor=ff0000&animation=fadeIn&fontAlignY=38"/>
 </p>
 
-<!-- GIF DEV -->
+<!-- HACKER GIF -->
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="500"/>
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="500"/>
 </p>
 
-<h2 align="center" style="color:#ff0000;">⚡ FULL STACK DEVELOPER</h2>
-
----
-
-## 🩸 SOBRE MIM
-
-Desenvolvedor focado em:
-
-🔥 Performance extrema  
-🧠 Arquitetura limpa  
-⚙️ Back-end robusto  
-🎨 Interfaces modernas  
-
-Sempre evoluindo. Sempre construindo.
-
----
-
-## 🛠️ STACK
-
+<!-- TYPING -->
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,ts,js,nodejs,nestjs,express,postgres,mongodb,docker,linux,git&theme=dark&perline=6" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=FF0000&center=true&vCenter=true&width=900&lines=Full+Stack+Engineer;Cybersecurity+Specialist;Secure+Architecture+Focused;Red+Team+Mindset+%F0%9F%9B%A1%EF%B8%8F"/>
 </p>
 
 ---
 
-## 🚀 OBJETIVO
+# 🧠 SOBRE MIM
 
-Construir sistemas escaláveis e sólidos, com código limpo e impacto real.
+Full Stack Engineer com especialização em **Cybersecurity** e arquitetura segura.
+
+🛡️ Segurança em primeiro lugar  
+⚡ Performance e escalabilidade  
+🧠 Pensamento ofensivo e defensivo  
+🔥 Código limpo e seguro  
 
 ---
 
-## 📩 CONTATO
+# 💻 FULL STACK
+
+## 🎨 FRONT-END
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,html,css,tailwind&theme=dark&perline=4" height="60"/>
+</p>
+
+---
+
+## ⚙️ BACK-END
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,prisma&theme=dark&perline=4" height="60"/>
+</p>
+
+---
+
+## 🗄️ DATABASE
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis&theme=dark&perline=3" height="60"/>
+</p>
+
+---
+
+# 🛡️ CYBERSECURITY
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=linux,bash,git,docker&theme=dark&perline=4" height="60"/>
+</p>
+
+🔴 Secure API Development  
+🔴 Authentication & Authorization  
+🔴 OWASP Best Practices  
+🔴 Threat Modeling  
+🔴 Infrastructure Hardening  
+
+---
+
+# 🎯 OBJETIVO
+
+Construir sistemas escaláveis e seguros, preparados para ambientes reais.
+
+---
+
+# 📩 CONTATO
 
 <p align="center">
 
 <a href="mailto:caetanoitalo60@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=red"/>
+<img src="https://img.shields.io/badge/Gmail-8B0000?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/italodevjs">
-<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=red"/>
+<img src="https://img.shields.io/badge/GitHub-8B0000?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://www.instagram.com/italogains">
-<img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=red"/>
+<img src="https://img.shields.io/badge/Instagram-8B0000?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
 </p>
 
 ---
 
+<!-- FOOTER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:000000&height=120&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:000000&height=160&section=footer"/>
 </p>
