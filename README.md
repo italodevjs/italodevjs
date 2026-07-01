@@ -240,7 +240,7 @@ class ItaloLeao(Engineer, SecurityMindset):
 
 <div align="center">
   <a href="https://github.com/italodevjs">
-    <img src="https://github-profile-trophy.vercel.app/?username=italodevjs&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=italodevjs&theme=radical&no-frame=true&no-bg=true&column=8&row=2&margin-w=8&margin-h=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B"/>
   </a>
 </div>
 
