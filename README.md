@@ -23,6 +23,21 @@
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
 </div>
 
+<!-- ════════════════════════════ BOOT SEQUENCE ════════════════════════════ -->
+<div align="center">
+
+```console
+root@italo:~$ ./init.sh --profile
+[ OK ]  loading kernel .................... done
+[ OK ]  mounting /skills/fullstack ........ done
+[ OK ]  mounting /skills/security ......... done
+[ OK ]  establishing secure channel ...... 256-bit AES
+[ OK ]  identity verified ................ ITALO LEÃO
+[ >> ]  welcome — you're now connected.
+```
+
+</div>
+
 <!-- ════════════════════════════ WHOAMI ════════════════════════════ -->
 <img align="right" height="250" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="hacker"/>
 
@@ -175,6 +190,46 @@ root@italo:~$ echo "the best defense is knowing the offense"
 <a href="https://github.com/italodevjs">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=italodevjs&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=FFFFFF&langs_count=10"/>
 </a>
+
+<br/>
+<br/>
+
+<!-- Profile summary cards — cyberpunk theme -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=italodevjs&theme=2077" width="100%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=italodevjs&theme=2077"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=italodevjs&theme=2077"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=italodevjs&theme=2077"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=italodevjs&theme=2077&utcOffset=-3"/>
+
+</div>
+
+---
+
+<!-- ════════════════════════════ MANIFESTO ════════════════════════════ -->
+## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="30"/> Rules of Engagement
+
+<div align="center">
+
+```python
+class ItaloLeao(Engineer, SecurityMindset):
+    """The principles I write every line of code by."""
+
+    def rules_of_engagement(self) -> list[str]:
+        return [
+            "01. Assume breach — trust nothing, verify everything.",
+            "02. Ship fast, but never ship a known vulnerability.",
+            "03. Read the source before you trust the abstraction.",
+            "04. Automate the boring, obsess over the critical path.",
+            "05. The best defense is understanding the offense.",
+            "06. Clean code is secure code — complexity hides bugs.",
+            "07. Stay curious. The exploit is always in the edge case.",
+        ]
+
+    def status(self) -> str:
+        return "🟢 building • breaking • hardening — on repeat"
+```
 
 </div>
 
