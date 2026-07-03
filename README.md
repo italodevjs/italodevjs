@@ -1,6 +1,6 @@
 <!-- ════════════════════════════ HEADER ════════════════════════════ -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:000000&height=280&section=header&text=ITALO%20LE%C3%83O&fontSize=90&fontColor=FF0000&animation=fadeIn&fontAlignY=38&desc=Full+Stack+Engineer+%E2%80%A2+Cybersecurity+Specialist&descSize=18&descAlignY=62&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:000000&height=280&section=header&text=Italodevjs&fontSize=90&fontColor=FF0000&animation=fadeIn&fontAlignY=38&desc=Full+Stack+Engineer+%E2%80%A2+Cybersecurity+Specialist&descSize=18&descAlignY=62&descAlign=50" width="100%"/>
 </div>
 
 <!-- ════════════════════════════ TYPING ════════════════════════════ -->
@@ -32,7 +32,7 @@ root@italo:~$ ./init.sh --profile
 [ OK ]  mounting /skills/fullstack ........ done
 [ OK ]  mounting /skills/security ......... done
 [ OK ]  establishing secure channel ...... 256-bit AES
-[ OK ]  identity verified ................ ITALO LEÃO
+[ OK ]  identity verified ................ italodevjs
 [ >> ]  welcome — you're now connected.
 ```
 
