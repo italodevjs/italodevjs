@@ -15,19 +15,19 @@
 
 <!-- LIVE:START -->
 
-> `uplink established` — this block rewrites itself once a day. Last sync **06 Sep 2026 · 02:16 (BRT)**.
+> `uplink established` — this block rewrites itself once a day. Last sync **06 Sep 2026 · 02:19 (BRT)**.
 
 | latest push | language | when |
 |:--|:--|:--|
-| [`italodevjs`](https://github.com/italodevjs/italodevjs) | `—` | `1h ago` |
-| [`Daily-green`](https://github.com/italodevjs/Daily-green) | `—` | `6h ago` |
-| [`caliber`](https://github.com/italodevjs/caliber) | `TypeScript` | `13h ago` |
-| [`Filiados`](https://github.com/italodevjs/Filiados) | `TypeScript` | `1mo ago` |
-| [`gta`](https://github.com/italodevjs/gta) | `—` | `1mo ago` |
+| [`italodevjs`](https://github.com/italodevjs/italodevjs) | `Python` | `0min ago` |
+| [`rafael-almeida-imoveis`](https://github.com/italodevjs/rafael-almeida-imoveis) | `HTML` | `2mo ago` |
+| [`itdv`](https://github.com/italodevjs/itdv) | `Luau` | `2mo ago` |
+| [`badge-unlock`](https://github.com/italodevjs/badge-unlock) | `JavaScript` | `2mo ago` |
+| [`hb-team-premium`](https://github.com/italodevjs/hb-team-premium) | `TypeScript` | `5mo ago` |
 
-**30** repositories · **1** stars · **9** followers · **—** contributions in the last year across **—** active days.
+**9** repositories · **1** stars · **9** followers · **36444** contributions in the last year across **99** active days.
 
-Primary languages: **TypeScript** 40% · **HTML** 35% · **Lua** 10% · **Python** 5%
+Primary languages: **Lua** 29% · **Python** 14% · **HTML** 14% · **Luau** 14%
 
 <!-- LIVE:END -->
 

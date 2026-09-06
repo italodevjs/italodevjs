@@ -33,7 +33,7 @@
     <animate attributeName="opacity" values="1;0.15;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
   <text x="1006" y="42" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" letter-spacing="1.5"
-        fill="#6E7681">SYNCED 2026-09-06 02:16 BRT</text>
+        fill="#6E7681">SYNCED 2026-09-06 02:19 BRT</text>
 </g>
 <line x1="40" y1="56" x2="1160" y2="56" stroke="#161B26"/>
 
@@ -45,97 +45,97 @@
           letter-spacing="3" fill="#6E7681">LANGUAGE ALLOCATION</text>
   </g>
 <g>
-      <text x="56" y="128" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">TypeScript</text>
+      <text x="56" y="128" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">Lua</text>
       <text x="614" y="128" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#3178C6" text-anchor="end">40.0%</text>
+            fill="#6666B3" text-anchor="end">28.6%</text>
       <rect x="56" y="136" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="136" width="0" height="7" rx="3.5" fill="#3178C6" opacity="0.92">
-        <animate attributeName="width" values="0;223" dur="1.1s"
+      <rect x="56" y="136" width="0" height="7" rx="3.5" fill="#6666B3" opacity="0.92">
+        <animate attributeName="width" values="0;159" dur="1.1s"
                  begin="0.00s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="136" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;223" dur="1.1s"
+        <animate attributeName="width" values="0;159" dur="1.1s"
                  begin="0.00s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.00s" repeatCount="indefinite"/>
       </rect>
     </g><g>
-      <text x="56" y="170" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">HTML</text>
+      <text x="56" y="170" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">Python</text>
       <text x="614" y="170" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#E34E29" text-anchor="end">35.0%</text>
+            fill="#3874A6" text-anchor="end">14.3%</text>
       <rect x="56" y="178" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="178" width="0" height="7" rx="3.5" fill="#E34E29" opacity="0.92">
-        <animate attributeName="width" values="0;195" dur="1.1s"
+      <rect x="56" y="178" width="0" height="7" rx="3.5" fill="#3874A6" opacity="0.92">
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.13s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="178" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;195" dur="1.1s"
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.13s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.13s" repeatCount="indefinite"/>
       </rect>
     </g><g>
-      <text x="56" y="212" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">Lua</text>
+      <text x="56" y="212" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">HTML</text>
       <text x="614" y="212" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6666B3" text-anchor="end">10.0%</text>
+            fill="#E34E29" text-anchor="end">14.3%</text>
       <rect x="56" y="220" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="220" width="0" height="7" rx="3.5" fill="#6666B3" opacity="0.92">
-        <animate attributeName="width" values="0;56" dur="1.1s"
+      <rect x="56" y="220" width="0" height="7" rx="3.5" fill="#E34E29" opacity="0.92">
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.26s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="220" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;56" dur="1.1s"
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.26s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.26s" repeatCount="indefinite"/>
       </rect>
     </g><g>
-      <text x="56" y="254" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">Python</text>
+      <text x="56" y="254" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">Luau</text>
       <text x="614" y="254" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#3874A6" text-anchor="end">5.0%</text>
+            fill="#A371F7" text-anchor="end">14.3%</text>
       <rect x="56" y="262" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="262" width="0" height="7" rx="3.5" fill="#3874A6" opacity="0.92">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+      <rect x="56" y="262" width="0" height="7" rx="3.5" fill="#A371F7" opacity="0.92">
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.39s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="262" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.39s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.39s" repeatCount="indefinite"/>
       </rect>
     </g><g>
-      <text x="56" y="296" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">CSS</text>
+      <text x="56" y="296" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">JavaScript</text>
       <text x="614" y="296" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#776396" text-anchor="end">5.0%</text>
+            fill="#F1E05A" text-anchor="end">14.3%</text>
       <rect x="56" y="304" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="304" width="0" height="7" rx="3.5" fill="#776396" opacity="0.92">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+      <rect x="56" y="304" width="0" height="7" rx="3.5" fill="#F1E05A" opacity="0.92">
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.52s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="304" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.52s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.52s" repeatCount="indefinite"/>
       </rect>
     </g><g>
-      <text x="56" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">JavaScript</text>
+      <text x="56" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#E6EDF3">TypeScript</text>
       <text x="614" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#F1E05A" text-anchor="end">5.0%</text>
+            fill="#3178C6" text-anchor="end">14.3%</text>
       <rect x="56" y="346" width="558" height="7" rx="3.5" fill="#12161F"/>
-      <rect x="56" y="346" width="0" height="7" rx="3.5" fill="#F1E05A" opacity="0.92">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+      <rect x="56" y="346" width="0" height="7" rx="3.5" fill="#3178C6" opacity="0.92">
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.65s" fill="freeze" calcMode="spline"
                  keySplines="0.2 0.8 0.2 1"/>
       </rect>
       <rect x="56" y="346" width="0" height="7" rx="3.5" fill="#FFFFFF" opacity="0.16">
-        <animate attributeName="width" values="0;28" dur="1.1s"
+        <animate attributeName="width" values="0;80" dur="1.1s"
                  begin="0.65s" fill="freeze"/>
         <animate attributeName="opacity" values="0.20;0.03;0.20" dur="3.4s"
                  begin="0.65s" repeatCount="indefinite"/>
@@ -155,7 +155,7 @@
     <text x="694.0" y="132" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="10"
           letter-spacing="1.2" fill="#6E7681">REPOSITORIES</text>
     <text x="694.0" y="162" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="26"
-          font-weight="700" fill="#FF0033">30</text>
+          font-weight="700" fill="#FF0033">9</text>
   </g><g>
     <rect x="799.0" y="106" width="107.0" height="72" rx="3" fill="#0D1018" stroke="#161B26"/>
     <rect x="799.0" y="106" width="3" height="72" fill="#00E5FF"/>
@@ -187,38 +187,38 @@
           letter-spacing="3" fill="#6E7681">RECENT PUSHES</text>
   </g>
 <g opacity="0">
-      <circle cx="684" cy="260" r="3.5" fill="#6E7681"/>
+      <circle cx="684" cy="260" r="3.5" fill="#3874A6"/>
       <text x="698" y="264" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">italodevjs</text>
       <text x="1144" y="264" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6E7681" text-anchor="end">1h ago</text>
+            fill="#6E7681" text-anchor="end">0min ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.50s" fill="freeze"/>
     </g><g opacity="0">
-      <circle cx="684" cy="286" r="3.5" fill="#6E7681"/>
-      <text x="698" y="290" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">Daily-green</text>
+      <circle cx="684" cy="286" r="3.5" fill="#E34E29"/>
+      <text x="698" y="290" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">rafael-almeida-imoveis</text>
       <text x="1144" y="290" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6E7681" text-anchor="end">6h ago</text>
+            fill="#6E7681" text-anchor="end">2mo ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.62s" fill="freeze"/>
     </g><g opacity="0">
-      <circle cx="684" cy="312" r="3.5" fill="#3178C6"/>
-      <text x="698" y="316" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">caliber</text>
+      <circle cx="684" cy="312" r="3.5" fill="#F778BA"/>
+      <text x="698" y="316" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">itdv</text>
       <text x="1144" y="316" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6E7681" text-anchor="end">13h ago</text>
+            fill="#6E7681" text-anchor="end">2mo ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.74s" fill="freeze"/>
     </g><g opacity="0">
-      <circle cx="684" cy="338" r="3.5" fill="#3178C6"/>
-      <text x="698" y="342" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">Filiados</text>
+      <circle cx="684" cy="338" r="3.5" fill="#F1E05A"/>
+      <text x="698" y="342" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">badge-unlock</text>
       <text x="1144" y="342" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6E7681" text-anchor="end">1mo ago</text>
+            fill="#6E7681" text-anchor="end">2mo ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.86s" fill="freeze"/>
     </g><g opacity="0">
-      <circle cx="684" cy="364" r="3.5" fill="#6E7681"/>
-      <text x="698" y="368" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">gta</text>
+      <circle cx="684" cy="364" r="3.5" fill="#3178C6"/>
+      <text x="698" y="368" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#E6EDF3">hb-team-premium</text>
       <text x="1144" y="368" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12"
-            fill="#6E7681" text-anchor="end">1mo ago</text>
+            fill="#6E7681" text-anchor="end">5mo ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.98s" fill="freeze"/>
     </g>
