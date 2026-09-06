@@ -10,7 +10,7 @@ from .common import (
     scanline, typewriter,
 )
 
-W, H = 1200, 360
+W, H = 1200, 470
 LOOP = 12.0
 
 TITLE = "ITALODEVJS"
@@ -43,7 +43,7 @@ def _glitch_offsets(axis_amplitude):
 def _title_channel(fill, amplitude, opacity):
     times, values = _glitch_offsets(amplitude)
     return f"""<g opacity="{opacity}">
-    <text x="0" y="0" font-family="{MONO}" font-size="74" font-weight="700"
+    <text x="0" y="0" font-family="{MONO}" font-size="84" font-weight="700"
           letter-spacing="4" fill="{fill}">{esc(TITLE)}
       <animate attributeName="x" values="{values}" keyTimes="{times}"
                dur="{LOOP}s" calcMode="discrete" repeatCount="indefinite"/>
@@ -77,7 +77,7 @@ def _rings(cx, cy):
     <circle r="5" fill="{RED}" filter="url(#hardGlow)">
       <animate attributeName="r" values="4;7;4" dur="1.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="0" y="132" font-family="{MONO}" font-size="11" letter-spacing="3"
+    <text x="0" y="150" font-family="{MONO}" font-size="17" letter-spacing="3"
           fill="{MUTED}" text-anchor="middle">SIGNAL  ACQUIRED</text>
   </g>"""
 
@@ -89,16 +89,16 @@ def render():
 
     clips, lines = [], []
     for i, (state, label, value) in enumerate(BOOT):
-        y = 224 + i * 26
+        y = 272 + i * 40
         begin = line_start + i * line_gap
         text = f"[ {state} ]  {label} {'.' * max(2, 30 - len(label))} {value}"
-        width = int(len(text) * 9.4) + 12
-        clips.append(typewriter(f"bootClip{i}", 60, y - 14, width, 20, begin, line_dur, LOOP))
+        width = int(len(text) * 14.4) + 14
+        clips.append(typewriter(f"bootClip{i}", 60, y - 22, width, 32, begin, line_dur, LOOP))
         colour = RED if state == ">>" else MUTED
         accent = RED if state == ">>" else "#2EA043"
         lines.append(
             f'<g clip-path="url(#bootClip{i})">'
-            f'<text x="60" y="{y}" font-family="{MONO}" font-size="15" fill="{colour}">'
+            f'<text x="60" y="{y}" font-family="{MONO}" font-size="23" fill="{colour}">'
             f'<tspan fill="{accent}">[ {esc(state)} ]</tspan>'
             f'<tspan fill="{TEXT}" opacity="0.85">  {esc(label)} </tspan>'
             f'<tspan fill="{MUTED}">{"." * max(2, 30 - len(label))}</tspan>'
@@ -106,14 +106,14 @@ def render():
             f"</text></g>"
         )
 
-    sub_width = int(len(SUBTITLE) * 12.7) + 12
-    clips.append(typewriter("subClip", 62, 150, sub_width, 26, sub_start, sub_dur, LOOP))
+    sub_width = int(len(SUBTITLE) * 19.4) + 14
+    clips.append(typewriter("subClip", 62, 174, sub_width, 38, sub_start, sub_dur, LOOP))
 
     # Park the caret at the end of the final boot line, where a shell leaves it.
     last = BOOT[-1]
     last_text = f"[ {last[0]} ]  {last[1]} {'.' * max(2, 30 - len(last[1]))} {last[2]}"
-    cursor_x = 60 + int(len(last_text) * 9.4) + 6
-    cursor_y = 224 + (len(BOOT) - 1) * 26 - 13
+    cursor_x = 60 + int(len(last_text) * 14.4) + 8
+    cursor_y = 272 + (len(BOOT) - 1) * 40 - 20
     cursor_begin = line_start + (len(BOOT) - 1) * line_gap + line_dur
     body = f"""{defs_common(W, H)}
 <defs>
@@ -129,32 +129,32 @@ def render():
 </defs>
 <rect width="{W}" height="{H}" fill="{BG}"/>
 {grid(W, H, 40)}
-<ellipse cx="200" cy="120" rx="460" ry="260" fill="url(#glowRed)"/>
-<ellipse cx="1030" cy="180" rx="240" ry="240" fill="url(#glowRed)" opacity="0.6"/>
+<ellipse cx="200" cy="170" rx="480" ry="320" fill="url(#glowRed)"/>
+<ellipse cx="1010" cy="230" rx="240" ry="240" fill="url(#glowRed)" opacity="0.6"/>
 
-<g transform="translate(60 120)" filter="url(#softGlow)">
+<g transform="translate(60 136)" filter="url(#softGlow)">
   {_title_channel(CYAN, 5, 0.75)}
   {_title_channel(RED, 4, 0.75)}
-  <text x="0" y="0" font-family="{MONO}" font-size="74" font-weight="700"
+  <text x="0" y="0" font-family="{MONO}" font-size="84" font-weight="700"
         letter-spacing="4" fill="{TEXT}">{esc(TITLE)}</text>
 </g>
 
 <g clip-path="url(#subClip)">
-  <text x="62" y="168" font-family="{MONO}" font-size="17" letter-spacing="2"
+  <text x="62" y="200" font-family="{MONO}" font-size="26" letter-spacing="2"
         fill="{RED}" opacity="0.95">{esc(SUBTITLE)}</text>
 </g>
 
-<rect x="60" y="186" width="0" height="2" fill="url(#edgeGrad)">
-  <animate attributeName="width" values="0;0;620;620" keyTimes="{keyframes(LOOP, [0, 0.6, 1.6, LOOP])}"
+<rect x="60" y="224" width="0" height="3" fill="url(#edgeGrad)">
+  <animate attributeName="width" values="0;0;700;700" keyTimes="{keyframes(LOOP, [0, 0.6, 1.6, LOOP])}"
            dur="{LOOP}s" repeatCount="indefinite"/>
 </rect>
 
 {"".join(lines)}
 
 <g opacity="0">
-  <rect x="60" y="344" width="620" height="3" fill="#12161F" rx="1.5"/>
-  <rect x="60" y="344" width="0" height="3" fill="url(#barFill)" rx="1.5">
-    <animate attributeName="width" values="0;0;620;620;0"
+  <rect x="60" y="448" width="700" height="4" fill="#12161F" rx="1.5"/>
+  <rect x="60" y="448" width="0" height="4" fill="url(#barFill)" rx="1.5">
+    <animate attributeName="width" values="0;0;700;700;0"
              keyTimes="{keyframes(LOOP, [0, 2.4, 7.2, LOOP * 0.985, LOOP])}"
              dur="{LOOP}s" repeatCount="indefinite"/>
   </rect>
@@ -162,14 +162,14 @@ def render():
 </g>
 
 <g opacity="0">
-  <rect x="{cursor_x}" y="{cursor_y}" width="9" height="17" fill="{RED}">
+  <rect x="{cursor_x}" y="{cursor_y}" width="13" height="26" fill="{RED}">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1"
              dur="1.1s" repeatCount="indefinite"/>
   </rect>
   {fade_in(cursor_begin, 0.15, LOOP)}
 </g>
 
-{_rings(1030, 172)}
+{_rings(1010, 230)}
 {scanline(W, H, 7.0)}
 {corner_brackets(W, H, 26, 12, RED, 0.7)}
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" stroke="{RED}" stroke-opacity="0.28" fill="none"/>"""

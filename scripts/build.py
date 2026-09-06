@@ -215,29 +215,41 @@ def collect(profile, repos):
 
 
 def live_markdown(data, days, stats):
-    """The self-updating block that sits inside README.md."""
+    """The self-updating block inside README.md.
+
+    Deliberately free of tables: GitHub squeezes them to one word per line on a
+    phone, and most profile visits are on a phone.
+    """
     local = (data["now"] + UTC_OFFSET).strftime("%d %b %Y · %H:%M")
-    rows = []
-    for name, language, when in data["recent"]:
-        link = f"[`{name}`](https://github.com/{USER}/{name})" if when != "—" else f"`{name}`"
-        rows.append(f"| {link} | `{language or '—'}` | `{when}` |")
-    top_langs = " · ".join(f"**{n}** {s * 100:.0f}%" for n, s in data["languages"][:4])
     active = sum(1 for _, c in days if c) if days else "—"
+    total = stats["total"]
+    if total.isdigit():
+        total = f"{int(total):,}"
+    rows = []
+    for name, language, when in data["recent"][:3]:
+        if when == "—":
+            rows.append(f"`{name}`")
+        else:
+            rows.append(
+                f"[`{name}`](https://github.com/{USER}/{name})"
+                f" · {language or 'no primary language'} · {when}"
+            )
+    pushes = "<br/>".join(rows)
+    stars = data["stars"]
+    star_word = "star" if stars == 1 else "stars"
     return "\n".join([
         LIVE_START,
         "",
-        f"> `uplink established` — this block rewrites itself once a day."
-        f" Last sync **{local} (BRT)**.",
+        f"**{data['repos']}** public repos &nbsp;·&nbsp; **{stars}** {star_word}"
+        f" &nbsp;·&nbsp; **{data['followers']}** followers",
         "",
-        "| latest push | language | when |",
-        "|:--|:--|:--|",
-        *rows,
+        f"**{total}** contributions in the last year, across **{active}** active days.",
         "",
-        f"**{data['repos']}** repositories · **{data['stars']}** stars ·"
-        f" **{data['followers']}** followers · **{stats['total']}** contributions in the"
-        f" last year across **{active}** active days.",
+        "**Latest pushes**",
         "",
-        f"Primary languages: {top_langs}",
+        pushes,
+        "",
+        f"<sub>rebuilt automatically · last sync {local} BRT</sub>",
         "",
         LIVE_END,
     ])

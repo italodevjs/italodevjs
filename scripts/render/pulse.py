@@ -11,10 +11,10 @@ from .common import (
     corner_brackets, defs_common, document, esc, grid,
 )
 
-W, H = 1200, 300
+W, H = 1200, 380
 PAD_X = 58
-BASELINE = 208
-AMPLITUDE = 118
+BASELINE = 268
+AMPLITUDE = 130
 MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
           "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
 
@@ -68,12 +68,12 @@ def _month_axis(days):
             continue
         seen.add(month)
         x = PAD_X + i * step
-        if x > W - PAD_X - 30:
+        if x > W - PAD_X - 46:
             continue
         label = MONTHS[int(date[5:7]) - 1]
         marks.append(
-            f'<line x1="{x:.1f}" y1="236" x2="{x:.1f}" y2="242" stroke="{PANEL_EDGE}"/>'
-            f'<text x="{x:.1f}" y="256" font-family="{MONO}" font-size="10" '
+            f'<line x1="{x:.1f}" y1="296" x2="{x:.1f}" y2="304" stroke="{PANEL_EDGE}"/>'
+            f'<text x="{x:.1f}" y="330" font-family="{MONO}" font-size="17" '
             f'letter-spacing="1.5" fill="{MUTED}">{label}</text>'
         )
     return "".join(marks)
@@ -81,8 +81,8 @@ def _month_axis(days):
 
 def _readout(label, value, x, accent=RED):
     return f"""<g transform="translate({x} 0)">
-    <text x="0" y="52" font-family="{MONO}" font-size="10" letter-spacing="2" fill="{MUTED}">{esc(label)}</text>
-    <text x="0" y="76" font-family="{MONO}" font-size="22" font-weight="700" fill="{accent}">{esc(value)}</text>
+    <text x="0" y="50" font-family="{MONO}" font-size="17" letter-spacing="2" fill="{MUTED}">{esc(label)}</text>
+    <text x="0" y="92" font-family="{MONO}" font-size="38" font-weight="700" fill="{accent}">{esc(value)}</text>
   </g>"""
 
 
@@ -91,7 +91,7 @@ def render(days, stats):
     ceiling = _scale(days)
     path, peaks = _trace(days, ceiling)
     awaiting = "" if days else (
-        f'<text x="{W // 2}" y="{BASELINE - 24}" font-family="{MONO}" font-size="13" '
+        f'<text x="{W // 2}" y="{BASELINE - 30}" font-family="{MONO}" font-size="20" '
         f'letter-spacing="3" fill="{MUTED}" text-anchor="middle">'
         f'AWAITING FIRST SYNC — the nightly build fills this in'
         f'<animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" '
@@ -134,16 +134,16 @@ def render(days, stats):
 {grid(W, H, 30, RED, 0.045)}
 <ellipse cx="600" cy="{BASELINE}" rx="620" ry="180" fill="url(#glowRed)" opacity="0.35"/>
 
-<text x="{PAD_X}" y="46" font-family="{MONO}" font-size="14" letter-spacing="4"
+<text x="{PAD_X}" y="50" font-family="{MONO}" font-size="22" letter-spacing="4"
       fill="{TEXT}">CONTRIBUTION CARDIOGRAM</text>
-<text x="{PAD_X}" y="66" font-family="{MONO}" font-size="11" letter-spacing="1.5"
-      fill="{MUTED}">last 365 days · log scale · sampled from the commit stream</text>
+<text x="{PAD_X}" y="80" font-family="{MONO}" font-size="17" letter-spacing="1.5"
+      fill="{MUTED}">last 365 days · log scale</text>
 
-<g transform="translate({W - 470} 0)">
+<g transform="translate({W - 620} 0)">
   {_readout('TOTAL', stats.get('total', '—'), 0)}
-  {_readout('PEAK DAY', stats.get('peak', '—'), 130, CYAN)}
-  {_readout('LONGEST', stats.get('longest', '—'), 260)}
-  {_readout('CURRENT', stats.get('current', '—'), 370, CYAN)}
+  {_readout('PEAK DAY', stats.get('peak', '—'), 170, CYAN)}
+  {_readout('LONGEST', stats.get('longest', '—'), 340)}
+  {_readout('CURRENT', stats.get('current', '—'), 480, CYAN)}
 </g>
 
 <line x1="{PAD_X}" y1="{BASELINE}" x2="{W - PAD_X}" y2="{BASELINE}"
@@ -157,8 +157,8 @@ def render(days, stats):
 </g>
 
 <g opacity="0.55">
-  <rect x="0" y="70" width="70" height="160" fill="url(#probeGrad)"/>
-  <rect x="68" y="70" width="2" height="160" fill="{CYAN}"/>
+  <rect x="0" y="110" width="70" height="190" fill="url(#probeGrad)"/>
+  <rect x="68" y="110" width="2" height="190" fill="{CYAN}"/>
   <animateTransform attributeName="transform" type="translate"
                     values="0 0;{W - 70} 0" dur="4.5s" fill="freeze"/>
   <animate attributeName="opacity" values="0.55;0.55;0" keyTimes="0;0.82;1"

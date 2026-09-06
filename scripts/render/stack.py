@@ -11,8 +11,8 @@ from .common import (
     corner_brackets, defs_common, document, esc, grid,
 )
 
-W, H = 1200, 430
-CX, CY, R = 268, 244, 126
+W, H = 1200, 700
+CX, CY, R = 330, 380, 165
 
 AXES = (
     ("FRONT-END", 0.92),
@@ -63,17 +63,17 @@ def _web():
 def _labels():
     out = []
     for i, (name, value) in enumerate(AXES):
-        x, y = _point(i, R + 34)
-        if abs(x - CX) < 12:
+        x, y = _point(i, R + 46)
+        if abs(x - CX) < 16:
             anchor = "middle"
         elif x > CX:
             anchor = "start"
         else:
             anchor = "end"
         out.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" font-family="{MONO}" font-size="11" '
+            f'<text x="{x:.1f}" y="{y:.1f}" font-family="{MONO}" font-size="18" '
             f'letter-spacing="1.6" fill="{TEXT}" text-anchor="{anchor}">{esc(name)}</text>'
-            f'<text x="{x:.1f}" y="{y + 15:.1f}" font-family="{MONO}" font-size="10" '
+            f'<text x="{x:.1f}" y="{y + 24:.1f}" font-family="{MONO}" font-size="17" '
             f'fill="{RED}" text-anchor="{anchor}">{int(value * 100)}</text>'
         )
     return "".join(out)
@@ -98,20 +98,20 @@ def _vertices(radii):
 
 def _columns():
     out = []
-    col_w, x0, y0 = 186, 608, 112
+    col_w, x0, y0 = 280, 660, 140
     for i, (title, accent, items) in enumerate(STACK):
-        x = x0 + (i % 3) * col_w
-        y = y0 + (i // 3) * 140
+        x = x0 + (i % 2) * col_w
+        y = y0 + (i // 2) * 186
         rows = "".join(
-            f'<rect x="{x}" y="{y + 18 + j * 19}" width="6" height="6" fill="{accent}" opacity="0.85"/>'
-            f'<text x="{x + 14}" y="{y + 24 + j * 19}" font-family="{MONO}" font-size="12" '
+            f'<rect x="{x}" y="{y + 20 + j * 27}" width="9" height="9" fill="{accent}" opacity="0.85"/>'
+            f'<text x="{x + 20}" y="{y + 29 + j * 27}" font-family="{MONO}" font-size="19" '
             f'fill="{MUTED}">{esc(item)}</text>'
             for j, item in enumerate(items)
         )
         out.append(f"""<g opacity="0">
-      <text x="{x}" y="{y}" font-family="{MONO}" font-size="11" letter-spacing="2.4"
+      <text x="{x}" y="{y}" font-family="{MONO}" font-size="18" letter-spacing="2.4"
             fill="{accent}">{esc(title)}</text>
-      <line x1="{x}" y1="{y + 7}" x2="{x + col_w - 26}" y2="{y + 7}" stroke="{PANEL_EDGE}"/>
+      <line x1="{x}" y1="{y + 11}" x2="{x + col_w - 32}" y2="{y + 11}" stroke="{PANEL_EDGE}"/>
       {rows}
       <animate attributeName="opacity" values="0;1" dur="0.5s" begin="{0.3 + i * 0.13:.2f}s" fill="freeze"/>
     </g>""")
@@ -132,13 +132,13 @@ def render():
 </defs>
 <rect width="{W}" height="{H}" fill="{BG}"/>
 {grid(W, H, 40, RED, 0.04)}
-<ellipse cx="{CX}" cy="{CY}" rx="300" ry="240" fill="url(#glowRed)" opacity="0.55"/>
+<ellipse cx="{CX}" cy="{CY}" rx="360" ry="290" fill="url(#glowRed)" opacity="0.55"/>
 
-<text x="40" y="42" font-family="{MONO}" font-size="13" letter-spacing="4"
+<text x="40" y="52" font-family="{MONO}" font-size="21" letter-spacing="4"
       fill="{TEXT}">CAPABILITY RADAR  ·  TOOLCHAIN</text>
-<text x="40" y="62" font-family="{MONO}" font-size="11" letter-spacing="1.4"
+<text x="40" y="82" font-family="{MONO}" font-size="17" letter-spacing="1.4"
       fill="{MUTED}">self-assessed depth per discipline, and what it is built with</text>
-<line x1="40" y1="76" x2="{W - 40}" y2="76" stroke="{PANEL_EDGE}"/>
+<line x1="40" y1="100" x2="{W - 40}" y2="100" stroke="{PANEL_EDGE}"/>
 
 {_web()}
 <polygon points="{collapsed}" fill="url(#radarFill)" stroke="{RED}" stroke-width="2"
@@ -148,7 +148,7 @@ def render():
 </polygon>
 {_vertices(radii)}
 {_labels()}
-<circle cx="{CX}" cy="{CY}" r="3" fill="{RED_DIM}"/>
+<circle cx="{CX}" cy="{CY}" r="4" fill="{RED_DIM}"/>
 
 {_columns()}
 {corner_brackets(W, H, 20, 12, RED, 0.5)}
