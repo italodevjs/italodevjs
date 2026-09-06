@@ -14,6 +14,7 @@ import json
 import os
 import pathlib
 import sys
+import xml.parsers.expat
 import urllib.error
 import urllib.request
 
@@ -269,6 +270,20 @@ def rewrite_readme(block):
     log("README live block updated")
 
 
+def validate(path):
+    """Parse a rendered panel before it is allowed to ship.
+
+    The workflow commits whatever this script writes, so a renderer that emits
+    malformed XML would publish a broken image straight to the profile. Parsing
+    here turns that into a failed build instead.
+    """
+    parser = xml.parsers.expat.ParserCreate()
+    try:
+        parser.Parse(path.read_bytes(), True)
+    except xml.parsers.expat.ExpatError as exc:
+        raise SystemExit(f"[build] {path.name} is not well-formed XML: {exc}")
+
+
 def main():
     ASSETS.mkdir(exist_ok=True)
     profile, repos, days = fetch_profile(), fetch_repos(), fetch_calendar()
@@ -286,11 +301,18 @@ def main():
     data = collect(profile, repos)
     stats = calendar_stats(days)
 
-    (ASSETS / "hero.svg").write_text(hero.render(), encoding="utf-8")
-    (ASSETS / "stack.svg").write_text(stack.render(), encoding="utf-8")
-    (ASSETS / "hud.svg").write_text(hud.render(data), encoding="utf-8")
-    (ASSETS / "pulse.svg").write_text(pulse.render(days, stats), encoding="utf-8")
-    log(f"rendered 4 panels · {len(days)} calendar days · {len(data['repo_objects'])} repos")
+    panels = {
+        "hero.svg": hero.render(),
+        "stack.svg": stack.render(),
+        "hud.svg": hud.render(data),
+        "pulse.svg": pulse.render(days, stats),
+    }
+    for name, markup in panels.items():
+        target = ASSETS / name
+        target.write_text(markup, encoding="utf-8")
+        validate(target)
+    log(f"rendered and validated {len(panels)} panels · {len(days)} calendar days"
+        f" · {len(data['repo_objects'])} repos")
 
     rewrite_readme(live_markdown(data, days, stats))
 
