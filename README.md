@@ -15,11 +15,11 @@
 
 <!-- LIVE:START -->
 
-> `uplink established` — this block rewrites itself once a day. Last sync **06 Sep 2026 · 02:19 (BRT)**.
+> `uplink established` — this block rewrites itself once a day. Last sync **06 Sep 2026 · 02:20 (BRT)**.
 
 | latest push | language | when |
 |:--|:--|:--|
-| [`italodevjs`](https://github.com/italodevjs/italodevjs) | `Python` | `0min ago` |
+| [`italodevjs`](https://github.com/italodevjs/italodevjs) | `Python` | `1min ago` |
 | [`rafael-almeida-imoveis`](https://github.com/italodevjs/rafael-almeida-imoveis) | `HTML` | `2mo ago` |
 | [`itdv`](https://github.com/italodevjs/itdv) | `Luau` | `2mo ago` |
 | [`badge-unlock`](https://github.com/italodevjs/badge-unlock) | `JavaScript` | `2mo ago` |

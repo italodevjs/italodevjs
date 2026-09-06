@@ -4,6 +4,8 @@ A year of commits becomes an ECG trace: flat where the year went quiet, spiking
 where it did not. Fed by the GraphQL contribution calendar, redrawn nightly.
 """
 
+import math
+
 from .common import (
     BG, CYAN, MONO, MUTED, PANEL_EDGE, RED, RED_DIM, TEXT,
     corner_brackets, defs_common, document, esc, grid,
@@ -18,12 +20,19 @@ MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
 
 
 def _scale(days):
-    """Cap the axis at the 95th percentile so one huge day can't flatten the rest."""
-    counts = sorted(c for _, c in days if c > 0)
-    if not counts:
-        return 1
-    ceiling = counts[int(len(counts) * 0.95) - 1] if len(counts) > 4 else counts[-1]
-    return max(1, ceiling)
+    """The busiest day sets the top of the axis."""
+    return max(1, max((c for _, c in days), default=1))
+
+
+def _norm(count, ceiling):
+    """Log scale, because this history spans three orders of magnitude.
+
+    A typical active day here sits near single digits while automated days run
+    into the thousands. Linear scaling would render everything but the peaks as
+    a flat line, hiding most of the actual work; a log axis keeps both regimes
+    legible in the same trace.
+    """
+    return math.log1p(count) / math.log1p(ceiling)
 
 
 def _trace(days, ceiling):
@@ -37,7 +46,7 @@ def _trace(days, ceiling):
         if count <= 0:
             points.append((x, BASELINE))
             continue
-        height = min(1.0, count / ceiling) * AMPLITUDE
+        height = min(1.0, _norm(count, ceiling)) * AMPLITUDE
         points.append((x, BASELINE))
         points.append((x + step * 0.25, BASELINE - height))
         points.append((x + step * 0.5, BASELINE + min(14, height * 0.18)))
@@ -128,7 +137,7 @@ def render(days, stats):
 <text x="{PAD_X}" y="46" font-family="{MONO}" font-size="14" letter-spacing="4"
       fill="{TEXT}">CONTRIBUTION CARDIOGRAM</text>
 <text x="{PAD_X}" y="66" font-family="{MONO}" font-size="11" letter-spacing="1.5"
-      fill="{MUTED}">last 365 days · sampled from the commit stream</text>
+      fill="{MUTED}">last 365 days · log scale · sampled from the commit stream</text>
 
 <g transform="translate({W - 470} 0)">
   {_readout('TOTAL', stats.get('total', '—'), 0)}
