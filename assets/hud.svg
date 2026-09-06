@@ -174,7 +174,7 @@
       <circle cx="669" cy="417" r="6" fill="#3874A6"/>
       <text x="690" y="424" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="22" fill="#E6EDF3">italodevjs</text>
       <text x="1138" y="424" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="19"
-            fill="#6E7681" text-anchor="end">5min ago</text>
+            fill="#6E7681" text-anchor="end">0min ago</text>
       <animate attributeName="opacity" values="0;1" dur="0.4s"
                begin="0.50s" fill="freeze"/>
     </g><g opacity="0">
