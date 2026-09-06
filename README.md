@@ -1,316 +1,218 @@
-<!-- ════════════════════════════ HEADER ════════════════════════════ -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:000000&height=280&section=header&text=Italodevjs&fontSize=90&fontColor=FF0000&animation=fadeIn&fontAlignY=38&desc=Full+Stack+Engineer+%E2%80%A2+Cybersecurity+Specialist&descSize=18&descAlignY=62&descAlign=50" width="100%"/>
-</div>
+<img src="assets/hero.svg" width="100%" alt="Italodevjs — full-stack engineer and security engineer"/>
 
-<!-- ════════════════════════════ TYPING ════════════════════════════ -->
 <p align="center">
-  <a href="https://github.com/italodevjs">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=900&color=FF0000&center=true&vCenter=true&multiline=false&width=900&height=60&lines=%3E+root%40italo%3A~%24+whoami;%3E+Full+Stack+Engineer+%7C+Cybersecurity+Specialist;%3E+Breaking+systems+to+build+them+stronger;%3E+Red+Team+mindset+%F0%9F%9B%A1%EF%B8%8F+Blue+Team+discipline;%3E+Offensive+thinking%2C+defensive+engineering" alt="Typing Animation"/>
-  </a>
+  <a href="#-whoami"><b>whoami</b></a> ·
+  <a href="#-the-terminal"><b>terminal</b></a> ·
+  <a href="#-telemetry"><b>telemetry</b></a> ·
+  <a href="#-capability-radar"><b>capabilities</b></a> ·
+  <a href="#-how-this-page-builds-itself"><b>how it works</b></a> ·
+  <a href="#-establish-connection"><b>contact</b></a>
 </p>
 
-<!-- ════════════════════════════ BADGES ════════════════════════════ -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=italodevjs&style=for-the-badge&color=8B0000&label=PROFILE+VIEWS"/>
-  <img src="https://img.shields.io/github/followers/italodevjs?label=FOLLOWERS&style=for-the-badge&color=8B0000&labelColor=000000"/>
-  <img src="https://img.shields.io/github/stars/italodevjs?label=STARS&style=for-the-badge&color=8B0000&labelColor=000000"/>
-  <img src="https://img.shields.io/badge/BASED_IN-BRAZIL-8B0000?style=for-the-badge&labelColor=000000"/>
-  <img src="https://img.shields.io/badge/STATUS-ONLINE-FF0000?style=for-the-badge&labelColor=000000"/>
-</p>
+---
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
-</div>
+## ⟢ Uplink
 
-<!-- ════════════════════════════ BOOT SEQUENCE ════════════════════════════ -->
-<div align="center">
+<!-- LIVE:START -->
 
-```console
-root@italo:~$ ./init.sh --profile
-[ OK ]  loading kernel .................... done
-[ OK ]  mounting /skills/fullstack ........ done
-[ OK ]  mounting /skills/security ......... done
-[ OK ]  establishing secure channel ...... 256-bit AES
-[ OK ]  identity verified ................ italodevjs
-[ >> ]  welcome — you're now connected.
+> `uplink established` — this block rewrites itself once a day. Last sync **06 Sep 2026 · 02:16 (BRT)**.
+
+| latest push | language | when |
+|:--|:--|:--|
+| [`italodevjs`](https://github.com/italodevjs/italodevjs) | `—` | `1h ago` |
+| [`Daily-green`](https://github.com/italodevjs/Daily-green) | `—` | `6h ago` |
+| [`caliber`](https://github.com/italodevjs/caliber) | `TypeScript` | `13h ago` |
+| [`Filiados`](https://github.com/italodevjs/Filiados) | `TypeScript` | `1mo ago` |
+| [`gta`](https://github.com/italodevjs/gta) | `—` | `1mo ago` |
+
+**30** repositories · **1** stars · **9** followers · **—** contributions in the last year across **—** active days.
+
+Primary languages: **TypeScript** 40% · **HTML** 35% · **Lua** 10% · **Python** 5%
+
+<!-- LIVE:END -->
+
+---
+
+## ⟢ `whoami`
+
+I build products end to end and then try to break them before somebody else does.
+Full-stack engineering is the craft; **security is the constraint I design against** —
+threat modelling before the first migration, hardening before the first deploy.
+
+```ts
+const italo = {
+  role:     'Full-Stack Engineer',
+  focus:    'application security & secure architecture',
+  approach: ['model the threat', 'ship the feature', 'harden the surface'],
+  base:     'Brazil 🇧🇷 → remote, worldwide',
+  belief:   'security is not a feature you add — it is a property you preserve',
+} as const;
 ```
 
-</div>
-
-<!-- ════════════════════════════ WHOAMI ════════════════════════════ -->
-<img align="right" height="250" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="hacker"/>
-
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"/> `~$ whoami`
-
-```typescript
-const italo: Engineer = {
-  role:        "Full Stack Engineer",
-  specialty:   "Cybersecurity & Secure Architecture",
-  mindset:     ["Offensive", "Defensive", "Pragmatic"],
-  currentWork: "Building bulletproof, scalable systems",
-  philosophy:  "Security isn't a feature — it's the foundation",
-  location:    "🇧🇷 Brazil → 🌎 Worldwide",
-  status:      "Always learning, always shipping",
-  coffee:      Infinity,
-};
-```
+<details>
+<summary><b>🇧🇷 Versão em português</b></summary>
 
 <br/>
 
-```diff
-+ 🛡️  Security first    — think like an attacker, defend like an engineer
-+ ⚡  Performance       — systems that survive the real world at scale
-+ 🧠  Dual mindset      — red team inside, blue team outside
-+ 🔥  Clean code        — secure, auditable, maintainable
-+ 🌎  Global reach      — based in Brazil, building for the world
+Construo produtos de ponta a ponta e depois tento quebrá-los antes que outra pessoa quebre.
+Desenvolvimento full-stack é o ofício; **segurança é a restrição que guia o projeto** —
+modelagem de ameaças antes da primeira migração, hardening antes do primeiro deploy.
+
+- **Front-end** — React, Next.js e TypeScript, com foco em performance e acessibilidade
+- **Back-end** — Node.js, NestJS e Python, APIs REST e GraphQL com contratos bem definidos
+- **Segurança** — OWASP Top 10, revisão de código, hardening de infraestrutura, zero-trust
+- **Plataforma** — Docker, Linux, Nginx e CI/CD no GitHub Actions
+
+Aberto a colaboração, pesquisa de segurança e projetos que precisem sobreviver ao mundo real.
+
+</details>
+
+---
+
+## ⟢ The terminal
+
+*This README has a shell. Expand a command to run it.*
+
+<details>
+<summary><code>root@italo:~$ cat /etc/principles</code></summary>
+
+<br/>
+
+```
+01  Assume breach. Trust nothing by default, verify everything by design.
+02  Ship fast — but never ship a vulnerability you already know about.
+03  Read the source before you trust the abstraction.
+04  Automate the boring; obsess over the critical path.
+05  The best defence is a working understanding of the offence.
+06  Complexity is where bugs hide. Simple code is safer code.
+07  Stay curious. The exploit almost always lives in the edge case.
 ```
 
-<br clear="right"/>
+</details>
+
+<details>
+<summary><code>root@italo:~$ ls -la ~/interests</code></summary>
+
+<br/>
+
+```
+drwxr-xr-x  appsec/            OWASP Top 10, secure code review, threat modelling
+drwxr-xr-x  architecture/      boundaries, contracts, systems that stay understandable
+drwxr-xr-x  performance/       the part of UX nobody notices until it is gone
+drwxr-xr-x  automation/        if it happened twice, it should not happen a third time
+drwxr-xr-x  reverse-eng/       taking things apart to learn how they were meant to work
+-rw-------  .coffee            permission denied
+```
+
+</details>
+
+<details>
+<summary><code>root@italo:~$ ./deploy --checklist</code></summary>
+
+<br/>
+
+What I actually run before anything reaches production:
+
+| stage | check |
+|:--|:--|
+| `build` | types clean, lint clean, no committed secrets |
+| `test` | happy path plus the edge case that scared me |
+| `review` | authz on every route, input validated at the boundary |
+| `harden` | least privilege, security headers, dependencies pinned |
+| `observe` | logs, alerts, and a rollback I have actually rehearsed |
+
+</details>
+
+<details>
+<summary><code>root@italo:~$ sudo access --level root</code></summary>
+
+<br/>
+
+```
+[ !! ] nice try.
+[ ok ] but curiosity is the right instinct — that is the whole job.
+
+       if you read this far, you are exactly the kind of person
+       I like building things with. say hello. ↓
+```
+
+</details>
 
 ---
 
-<!-- ════════════════════════════ ARSENAL ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="30"/> Arsenal
+## ⟢ Telemetry
 
-<table align="center">
-<tr>
-<td valign="top" width="33%">
+Every panel below is generated from this account's real state and redrawn on a schedule.
+No third-party stats service is involved — the SVGs are compiled by [`scripts/build.py`](scripts/build.py).
 
-### 🎨 Front-end
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,html,css,tailwind,vite&theme=dark&perline=3"/>
-</p>
+<img src="assets/pulse.svg" width="100%" alt="A year of contributions drawn as a cardiogram"/>
 
-</td>
-<td valign="top" width="33%">
-
-### ⚙️ Back-end
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,prisma,graphql,python,go&theme=dark&perline=3"/>
-</p>
-
-</td>
-<td valign="top" width="33%">
-
-### 🗄️ Database
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql,supabase&theme=dark&perline=3"/>
-</p>
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="33%">
-
-### ☁️ DevOps
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,nginx,linux,bash&theme=dark&perline=3"/>
-</p>
-
-</td>
-<td valign="top" width="33%">
-
-### 🛡️ Security
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=kali,powershell,cloudflare,githubactions&theme=dark&perline=3"/>
-</p>
-
-</td>
-<td valign="top" width="33%">
-
-### 🧰 Tools
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,vim,md&theme=dark&perline=3"/>
-</p>
-
-</td>
-</tr>
-</table>
+<img src="assets/hud.svg" width="100%" alt="Live system monitor: language allocation, vitals and recent pushes"/>
 
 ---
 
-<!-- ════════════════════════════ CYBERSEC ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/qiOH3cQGOUDEc/giphy.gif" width="30"/> Cybersecurity Focus
+## ⟢ Capability radar
 
-<div align="center">
+<img src="assets/stack.svg" width="100%" alt="Capability radar and toolchain"/>
 
-| 🔴 &nbsp;OFFENSIVE&nbsp; | 🔵 &nbsp;DEFENSIVE&nbsp; |
-|:---|:---|
-| Penetration Testing | Infrastructure Hardening |
-| Vulnerability Research | Threat Modeling (STRIDE) |
-| OWASP Top 10 Exploitation | Secure Code Review |
-| Social Engineering | Incident Response |
-| Red Team Operations | Zero-Trust Architecture |
+---
 
-</div>
+## ⟢ How this page builds itself
+
+Most profile READMEs are a collage of other people's services. This one is a build artifact:
+a scheduled job reads the GitHub API, renders every panel as hand-written SVG, and commits
+the result back to this repository.
+
+```mermaid
+flowchart LR
+  A["⏱ schedule<br/>daily + on push"] --> B["scripts/build.py"]
+  B --> C["GitHub REST<br/>profile · repos"]
+  B --> D["GitHub GraphQL<br/>contribution calendar"]
+  C --> E["snapshot.json<br/>last known good"]
+  D --> E
+  E --> F["render/hero · pulse<br/>hud · stack"]
+  F --> G["assets/*.svg<br/>SMIL animation, zero JS"]
+  F --> H["README live block"]
+  G --> I["commit back to main"]
+  H --> I
+```
+
+| file | what it does |
+|:--|:--|
+| [`scripts/build.py`](scripts/build.py) | fetches the data, caches it, renders every panel, rewrites the live block |
+| [`scripts/render/hero.py`](scripts/render/hero.py) | the masthead — glitch typography and a boot sequence on one SMIL timeline |
+| [`scripts/render/pulse.py`](scripts/render/pulse.py) | a year of commits redrawn as an ECG trace |
+| [`scripts/render/hud.py`](scripts/render/hud.py) | language allocation, vitals and the most recent pushes |
+| [`scripts/render/stack.py`](scripts/render/stack.py) | capability radar and toolchain, every mark drawn from primitives |
+| [`scripts/render/common.py`](scripts/render/common.py) | shared palette, grid, scanline and typewriter primitives |
+
+Design constraints worth naming: GitHub renders these files as **images**, so there is no
+JavaScript available — every animation is SMIL living inside the document. There are no
+external fonts, no icon CDN and no tracking pixels. If the API is rate-limited or down, the
+build falls back to the last committed snapshot instead of rendering empty panels.
+
+Want to run it yourself?
 
 ```bash
-root@italo:~$ nmap -sV --script vuln $TARGET
-root@italo:~$ burpsuite --project-file ./assessment.burp
-root@italo:~$ hardening --framework CIS --level 2
-root@italo:~$ echo "the best defense is knowing the offense"
+git clone https://github.com/italodevjs/italodevjs && cd italodevjs
+GITHUB_TOKEN=<your token> python3 scripts/build.py   # stdlib only, no dependencies
 ```
 
 ---
 
-<!-- ════════════════════════════ STATUS BOARD ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/W5eLM3PAszZ04/giphy.gif" width="30"/> Current Operations
-
-<div align="center">
-
-```yaml
-┌─[ SYSTEM STATUS ]────────────────────────────────────────┐
-│                                                          │
-│   🔭  Working on ...... secure, scalable architectures   │
-│   🌱  Learning ........ advanced offensive security      │
-│   🤝  Open to ......... collaboration & security research │
-│   🎯  2026 goal ....... ship, break, harden, repeat      │
-│   💬  Ask me about .... AppSec • DevSecOps • Full Stack   │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
-
-</div>
-
----
-
-<!-- ════════════════════════════ ANALYTICS ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"/> GitHub Analytics
-
-<div align="center">
-
-<a href="https://github.com/italodevjs">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=italodevjs&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=FFFFFF"/>
-  <img height="180em" src="https://streak-stats.demolab.com?user=italodevjs&theme=radical&hide_border=true&background=0D1117&stroke=FF0000&ring=FF0000&fire=FF0000&currStreakLabel=FF0000"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/italodevjs">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=italodevjs&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=FFFFFF&langs_count=10"/>
-</a>
-
-<br/>
-<br/>
-
-<!-- Profile summary cards — cyberpunk theme -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=italodevjs&theme=2077" width="100%"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=italodevjs&theme=2077"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=italodevjs&theme=2077"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=italodevjs&theme=2077"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=italodevjs&theme=2077&utcOffset=-3"/>
-
-</div>
-
----
-
-<!-- ════════════════════════════ MANIFESTO ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="30"/> Rules of Engagement
-
-<div align="center">
-
-```python
-class ItaloLeao(Engineer, SecurityMindset):
-    """The principles I write every line of code by."""
-
-    def rules_of_engagement(self) -> list[str]:
-        return [
-            "01. Assume breach — trust nothing, verify everything.",
-            "02. Ship fast, but never ship a known vulnerability.",
-            "03. Read the source before you trust the abstraction.",
-            "04. Automate the boring, obsess over the critical path.",
-            "05. The best defense is understanding the offense.",
-            "06. Clean code is secure code — complexity hides bugs.",
-            "07. Stay curious. The exploit is always in the edge case.",
-        ]
-
-    def status(self) -> str:
-        return "🟢 building • breaking • hardening — on repeat"
-```
-
-</div>
-
----
-
-<!-- ════════════════════════════ TROPHIES ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"/> Trophies
-
-<div align="center">
-  <a href="https://github.com/italodevjs">
-    <img src="https://github-profile-trophy.vercel.app/?username=italodevjs&theme=radical&no-frame=true&no-bg=true&column=8&row=2&margin-w=8&margin-h=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B"/>
-  </a>
-</div>
-
----
-
-<!-- ════════════════════════════ ACTIVITY ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"/> Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=italodevjs&theme=redical&hide_border=true&bg_color=0D1117&color=FF0000&line=FF0000&point=FFFFFF&area=true&area_color=8B0000"/>
-</div>
-
-<!-- Snake eating contributions -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/italodevjs/italodevjs/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
-</div>
-
----
-
-<!-- ════════════════════════════ PROJECTS ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"/> Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/italodevjs/rafael-almeida-imoveis">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=italodevjs&repo=rafael-almeida-imoveis&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=FFFFFF"/>
-</a>
-
-</div>
-
----
-
-<!-- ════════════════════════════ QUOTE ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/HBL5c5lFPIk1GYmYdy/giphy.gif" width="30"/> Quote of the Day
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
-</div>
-
----
-
-<!-- ════════════════════════════ CONNECT ════════════════════════════ -->
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"/> Establish Connection
+## ⟢ Establish connection
 
 <p align="center">
-  <a href="mailto:caetanoitalo60@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-8B0000?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000"/>
-  </a>
-  <a href="https://github.com/italodevjs">
-    <img src="https://img.shields.io/badge/GitHub-8B0000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/>
-  </a>
-  <a href="https://www.instagram.com/italogains">
-    <img src="https://img.shields.io/badge/Instagram-8B0000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000000"/>
-  </a>
-  <a href="https://www.linkedin.com/in/italodevjs">
-    <img src="https://img.shields.io/badge/LinkedIn-8B0000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000"/>
-  </a>
+  <a href="mailto:caetanoitalo60@gmail.com"><b>EMAIL</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/italodevjs"><b>LINKEDIN</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/italodevjs"><b>GITHUB</b></a> &nbsp;·&nbsp;
+  <a href="https://www.instagram.com/italogains"><b>INSTAGRAM</b></a>
 </p>
 
----
+<p align="center">
+  <sub>Open to collaboration, security research, and problems that deserve a careful engineer.</sub>
+</p>
 
-<!-- ════════════════════════════ FOOTER ════════════════════════════ -->
-<div align="center">
-
-### ⚡ "Security is not a product, but a process." — Bruce Schneier
-
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400"/>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:FF0000,100:000000&height=160&section=footer&text=%3C%2F%20thanks%20for%20visiting%20%3E&fontSize=22&fontColor=FFFFFF&animation=twinkling&fontAlignY=65"/>
-
-</div>
+<p align="center">
+  <sub><code>connection closed by remote host — but the door is unlocked.</code></sub>
+</p>
