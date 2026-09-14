@@ -1,159 +1,92 @@
-<img src="assets/hero.svg" width="100%" alt="Italodevjs — full-stack engineer and security engineer"/>
+<img src="assets/hero.svg" width="100%" alt="Italo — software developer"/>
 
-<p align="center">
-  <b>Full-stack engineer.</b> I build products end to end,<br/>
-  then try to break them before somebody else does.
-</p>
+<h3>Italo · Software Developer</h3>
 
-<p align="center">
-  <a href="#-whoami">whoami</a> ·
-  <a href="#-the-terminal">terminal</a> ·
-  <a href="#-telemetry">telemetry</a> ·
-  <a href="#-establish-connection">contact</a>
-</p>
+I build and ship full-stack web products, and I run them in production — including
+the parts that only show up after launch: payment webhooks, third-party OAuth,
+egress bills and outages.
+
+Based in Brazil, open to remote work.
 
 ---
 
-<!-- LIVE:START -->
+### About
 
-**9** public repos &nbsp;·&nbsp; **1** star &nbsp;·&nbsp; **9** followers
+I work end to end: Next.js and TypeScript on the front, Postgres and route
+handlers on the back, and whatever infrastructure the product turns out to need.
+Security is where I pay the most attention — not as a label, but as the specific
+questions of who can read this row, what happens if this URL points inward, and
+whether this webhook can be replayed.
 
-**40,827** contributions in the last year, across **103** active days.
-
-**Latest pushes**
-
-[`italodevjs`](https://github.com/italodevjs/italodevjs) · Python · 1d ago<br/>[`rafael-almeida-imoveis`](https://github.com/italodevjs/rafael-almeida-imoveis) · HTML · 2mo ago<br/>[`itdv`](https://github.com/italodevjs/itdv) · Luau · 2mo ago
-
-<sub>rebuilt automatically · last sync 09 Sep 2026 · 06:42 BRT</sub>
-
-<!-- LIVE:END -->
+Most of what I know came from operating something real. My main project has been
+down twice for reasons I had to diagnose and fix, and those two incidents taught
+me more than any tutorial.
 
 ---
 
-## ⟢ `whoami`
+### Caliber — main project
 
-Security is the constraint I design against — threat modelling before the
-first migration, hardening before the first deploy.
+**A biolink platform for creators.** One page holding every link, social account
+and track, at `caliber.lol/username`. Built and operated solo.
 
-```ts
-const italo = {
-  focus: 'application security & secure architecture',
-  loop:  ['model the threat', 'ship it', 'harden the surface'],
-  base:  'Brazil 🇧🇷 → remote',
-};
-```
+**Live → [caliber.lol](https://caliber.lol)**
 
-**Front-end** React · Next.js · TypeScript
-**Back-end** Node.js · NestJS · Python
-**Security** OWASP Top 10 · code review · hardening
-**Platform** Docker · Linux · Nginx · GitHub Actions
+| | |
+|:--|:--|
+| **Stack** | Next.js 16 · React · TypeScript · Supabase Postgres · Tailwind · Cloudflare Workers + R2 |
+| **Scale** | 34 API routes · 66 migrations · 42 RLS-protected tables · 89 test files |
+| **Payments** | Stripe, NOWPayments and Ticto webhooks, with idempotent entitlement grants |
+| **Integrations** | Discord, Spotify, Twitch, YouTube, Last.fm |
 
-<details>
-<summary><b>🇧🇷 Em português</b></summary>
+Things in it I'd want to be asked about:
 
-<br/>
-
-Construo produtos de ponta a ponta e depois tento quebrá-los antes que outra
-pessoa quebre. Segurança é a restrição que guia o projeto: modelagem de ameaças
-antes da primeira migração, hardening antes do primeiro deploy.
-
-Aberto a colaboração, pesquisa de segurança e projetos que precisem sobreviver
-ao mundo real.
-
-</details>
+- **An outage caused by a video banner.** Supabase cut the project off at 12.41 GB
+  of egress against a 5 GB cap — taking the database and login down with it. Root
+  cause was a 6.6 MB banner re-downloaded across 1,906 visits. I rejected "cache
+  it better" and moved media to Cloudflare R2, where egress isn't billed, so the
+  quota stops existing instead of becoming less likely to blow.
+- **A read-through CDN with no migration.** The Worker copies each file to R2 on
+  its first request. Every file leaves the origin exactly once, only files anyone
+  opens get copied, and URLs already saved in profiles kept working.
+- **SSRF protection on link previews.** The server resolves the hostname before
+  fetching and refuses private, loopback and link-local addresses — closing
+  `169.254.169.254` metadata reads.
 
 ---
 
-## ⟢ The terminal
+### Also built
 
-*This README has a shell. Tap a command to run it.*
-
-<details>
-<summary><code>cat /etc/principles</code></summary>
-
-<br/>
-
-```
-01  Assume breach. Verify everything by design.
-02  Ship fast — never ship a known vulnerability.
-03  Read the source before trusting the abstraction.
-04  Automate the boring, obsess over the critical path.
-05  The best defence is understanding the offence.
-06  Complexity hides bugs. Simple code is safer code.
-07  The exploit lives in the edge case.
-```
-
-</details>
-
-<details>
-<summary><code>./deploy --checklist</code></summary>
-
-<br/>
-
-What actually runs before anything reaches production:
-
-- **build** — types clean, lint clean, no committed secrets
-- **test** — the happy path, plus the edge case that scared me
-- **review** — authz on every route, input validated at the boundary
-- **harden** — least privilege, security headers, dependencies pinned
-- **observe** — logs, alerts, and a rollback I have rehearsed
-
-</details>
-
-<details>
-<summary><code>sudo access --level root</code></summary>
-
-<br/>
-
-```
-[ !! ] nice try.
-[ ok ] but curiosity is the right instinct — it is the whole job.
-
-       if you read this far, you are the kind of person
-       I like building things with. say hello. ↓
-```
-
-</details>
+- **[hb-team-premium](https://github.com/italodevjs/hb-team-premium)** — team
+  management and consulting dashboard · TypeScript
+- **[rafael-almeida-imoveis](https://github.com/italodevjs/rafael-almeida-imoveis)**
+  — property site for a real-estate broker · HTML/CSS
 
 ---
 
-## ⟢ Telemetry
+### Stack
 
-<img src="assets/pulse.svg" width="100%" alt="A year of contributions drawn as a cardiogram"/>
+Only what I've actually shipped with.
 
-<img src="assets/hud.svg" width="100%" alt="Live system monitor: language allocation, vitals and recent pushes"/>
-
-<img src="assets/stack.svg" width="100%" alt="Capability radar and toolchain"/>
-
-<details>
-<summary><b>These panels are not a stats service — they compile themselves</b></summary>
-
-<br/>
-
-Every panel above is hand-written SVG, rendered from this account's real state
-by [`scripts/build.py`](scripts/build.py) and committed back here once a day.
-
-GitHub renders these files as **images**, so no JavaScript is available: every
-animation is SMIL living inside the document. No external fonts, no icon CDN,
-no tracking pixels. If the API is down or rate-limited, the build falls back to
-the last committed snapshot instead of rendering empty panels.
-
-```bash
-GITHUB_TOKEN=<token> python3 scripts/build.py   # stdlib only, no dependencies
-```
-
-</details>
+| | |
+|:--|:--|
+| **Frontend** | TypeScript · React · Next.js (App Router, Server Components) · Tailwind CSS · Framer Motion |
+| **Backend** | Node.js · Next.js Route Handlers · Zod validation |
+| **Database** | PostgreSQL · Supabase · SQL migrations · row-level security |
+| **Cloud** | Cloudflare Workers · R2 · Vercel · Docker |
+| **Security** | OWASP Top 10 · SSRF defence · webhook signature verification · CSP, HSTS |
+| **Tooling** | Git · GitHub Actions · Vitest · ESLint |
 
 ---
 
-## ⟢ Establish connection
+### Focus
 
-<p align="center">
-  <a href="mailto:caetanoitalo60@gmail.com"><b>EMAIL</b></a> ·
-  <a href="https://www.linkedin.com/in/italodevjs"><b>LINKEDIN</b></a> ·
-  <a href="https://www.instagram.com/italogains"><b>INSTAGRAM</b></a>
-</p>
+Web application architecture · API design · authentication and authorisation ·
+application security · database design · deployment and incident response
 
-<p align="center">
-  <sub>Open to collaboration, security research, and problems that deserve a careful engineer.</sub>
-</p>
+---
+
+### Contact
+
+[caliber.lol](https://caliber.lol) ·
+[LinkedIn](https://www.linkedin.com/in/italodevjs) ·
+[caetanoitalo60@gmail.com](mailto:caetanoitalo60@gmail.com)
