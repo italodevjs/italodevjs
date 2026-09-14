@@ -139,18 +139,3 @@ def document(width, height, body, title):
         f"{body}</svg>\n"
     )
 
-
-def readable(hex_color, floor=0.42):
-    """Lift a colour until it reads against the near-black background.
-
-    Some linguist colours (Lua's navy, Ruby's maroon) vanish on this palette;
-    this keeps their hue while raising luminance to a legible floor.
-    """
-    value = hex_color.lstrip("#")
-    r, g, b = (int(value[i:i + 2], 16) / 255 for i in (0, 2, 4))
-    luma = 0.2126 * r + 0.7152 * g + 0.0722 * b
-    if luma >= floor:
-        return hex_color
-    lift = (floor - luma) / max(1e-6, 1 - luma)
-    r, g, b = (channel + (1 - channel) * lift for channel in (r, g, b))
-    return "#" + "".join(f"{round(channel * 255):02X}" for channel in (r, g, b))
