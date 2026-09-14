@@ -14,14 +14,16 @@ W, H = 1200, 470
 LOOP = 12.0
 
 TITLE = "ITALODEVJS"
-SUBTITLE = "FULL-STACK ENGINEER  //  SECURITY ENGINEERING"
+SUBTITLE = "SOFTWARE DEVELOPER  //  FULL-STACK  ·  SECURITY-MINDED"
 
+# Every line states something true about the stack actually in production,
+# rather than decorating the banner with hacker-movie text.
 BOOT = [
-    ("ok", "kernel", "loaded"),
-    ("ok", "/skills/fullstack", "mounted"),
-    ("ok", "/skills/appsec", "armed"),
-    ("ok", "secure channel", "aes-256-gcm"),
-    (">>", "identity", "italodevjs @ br"),
+    ("ok", "next.js · typescript", "building"),
+    ("ok", "postgres · supabase", "row-level security"),
+    ("ok", "cloudflare workers · r2", "serving media"),
+    ("ok", "stripe webhooks", "signature verified"),
+    (">>", "caliber.lol", "live in production"),
 ]
 
 # Three chunky glitch bursts spread across the loop.
@@ -78,7 +80,7 @@ def _rings(cx, cy):
       <animate attributeName="r" values="4;7;4" dur="1.6s" repeatCount="indefinite"/>
     </circle>
     <text x="0" y="150" font-family="{MONO}" font-size="17" letter-spacing="3"
-          fill="{MUTED}" text-anchor="middle">SIGNAL  ACQUIRED</text>
+          fill="{MUTED}" text-anchor="middle">BRAZIL  ·  REMOTE</text>
   </g>"""
 
 
