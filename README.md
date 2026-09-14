@@ -54,15 +54,6 @@ Things in it I'd want to be asked about:
 
 ---
 
-### Also built
-
-- **[hb-team-premium](https://github.com/italodevjs/hb-team-premium)** — team
-  management and consulting dashboard · TypeScript
-- **[rafael-almeida-imoveis](https://github.com/italodevjs/rafael-almeida-imoveis)**
-  — property site for a real-estate broker · HTML/CSS
-
----
-
 ### Stack
 
 Only what I've actually shipped with.
