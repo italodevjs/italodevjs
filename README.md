@@ -1,12 +1,16 @@
 <img src="assets/hero.svg" width="100%" alt="Italo — software developer"/>
 
-<h3>Italo · Software Developer</h3>
+<h1>Italo — Software Developer</h1>
+
+**Full-stack engineering · Web application security · Product development**
 
 I build and ship full-stack web products, and I run them in production — including
 the parts that only show up after launch: payment webhooks, third-party OAuth,
 egress bills and outages.
 
-Based in Brazil, open to remote work.
+Based in Brazil, open to remote work and international academic opportunities.
+
+[Live product](https://caliber.lol) · [Open-source project](https://github.com/italodevjs/itdv) · [LinkedIn](https://www.linkedin.com/in/italodevjs)
 
 ---
 
@@ -53,6 +57,18 @@ Things in it I'd want to be asked about:
   `169.254.169.254` metadata reads.
 
 ---
+
+### Selected public work
+
+| Project | Evidence |
+|:--|:--|
+| [Caliber](https://caliber.lol) | Live web product; architecture and engineering case study above |
+| [ITDV](https://github.com/italodevjs/itdv) | Public source code, documentation, examples, changelog and contribution guidelines |
+| [HB Team Premium](https://github.com/italodevjs/hb-team-premium) | Public application repository with client, server and shared code |
+
+### Academic direction
+
+I am interested in formal studies in computing, particularly software engineering, algorithms, databases and secure systems. My goal is to strengthen my theoretical foundations while continuing to build practical software. I use AI-assisted development tools and aim to be able to explain, test and maintain the systems I ship.
 
 ### Stack
 
