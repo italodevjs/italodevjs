@@ -36,9 +36,9 @@ TypeScript and JavaScript · Python · SQL · Luau
 
 Input validation, data structures, computational geometry, colour processing, reproducible tests and clear security boundaries. Browser-local execution is a deliberate choice for these tools: it avoids uploading files and keeps the demonstrations independent of a paid service.
 
-## Learning and authorship
+## Project documentation
 
-These projects were reconstructed with substantial AI assistance. Each repository documents its implementation, assumptions, tests and limitations, and includes exercises for understanding and extending the code. They are personal engineering projects, without claims of employment, academic admission or production adoption.
+Each repository documents its implementation, assumptions, tests and limitations, and includes exercises for understanding and extending the code. They are personal engineering projects, without claims of employment, academic admission or production adoption.
 
 **Earlier work:** Caliber, a previous biolink application, is offline. Its original database is unavailable; it is not presented as an active service.
 
