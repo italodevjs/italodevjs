@@ -38,8 +38,6 @@ Input validation, data structures, computational geometry, colour processing, re
 
 ## Learning and authorship
 
-I am preparing for future computing studies in Canada, with an interest in the British Columbia Institute of Technology (BCIT).
-
 These projects were reconstructed with substantial AI assistance. Each repository documents its implementation, assumptions, tests and limitations, and includes exercises for understanding and extending the code. They are personal engineering projects, without claims of employment, academic admission or production adoption.
 
 **Earlier work:** Caliber, a previous biolink application, is offline. Its original database is unavailable; it is not presented as an active service.
